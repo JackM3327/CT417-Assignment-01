@@ -31,7 +31,7 @@
         <dependency>
 	    <groupId>com.github.JackM3327</groupId>
 	    <artifactId>CT417-Assignment-01</artifactId>
-	    <version>Tag</version>
+	    <version>-SNAPSHOT</version>
 	</dependency>
     </dependencies>
 </project>
