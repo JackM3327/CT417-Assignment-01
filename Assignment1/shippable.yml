@@ -1,11 +1,15 @@
 language: java
 
 jdk:
-  - oraclejdk8
+  - openjdk11
   
 branches:
   only:
     - master
+    
+after_success:
+- mvn clean cobertura:cobertura
+- mvn test
     
 build:
   on_success:
