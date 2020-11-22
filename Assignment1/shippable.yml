@@ -14,3 +14,8 @@ after_success:
 build:
   on_success:
     - mvn clean test
+    
+name: CT417-Assignment-01_runCI
+type: runCI
+steps:
+  - IN: CT417-Assignment-01_ciRepo
