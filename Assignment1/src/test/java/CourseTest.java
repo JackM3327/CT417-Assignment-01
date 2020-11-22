@@ -19,9 +19,9 @@ public class CourseTest {
     DateTime startDate = new DateTime(2020, 9, 28, 0, 0);
     DateTime endDate = new DateTime(2021, 6, 4, 0, 0);
     
-    Student student1 = new Student("Jack", 24, sampleDOB);
-    Student student2 = new Student("John", 20, sampleDOB);
-    Student student3 = new Student("Mary", 41, sampleDOB);
+    Student student1 = new Student("Jack", 17508126, sampleDOB);
+    Student student2 = new Student("John", 17809321, sampleDOB);
+    Student student3 = new Student("Mary", 16657341, sampleDOB);
     
     Module module1 = new Module("Software Engineering 3", "CT417");
     Module module2 = new Module("Machine Learning", "CT4101");
@@ -53,9 +53,9 @@ public class CourseTest {
     public void testAddModule() {
         System.out.println("addModule");
         module1.addStudent(student1);
-        module1.addStudent(student2);
-        module2.addStudent(student2);
+        module1.addStudent(student3);
         module2.addStudent(student3);
+        module2.addStudent(student2);
         Module module = module1;
         Module module3 = module2;
         Course instance = course1;
@@ -89,7 +89,6 @@ public class CourseTest {
         System.out.println("printStudentUsernames");
         
         Course instance = course1;
-        // Add Student if not already been added 
         instance.addStudent(student1);
         instance.printStudentUsernames();
     }

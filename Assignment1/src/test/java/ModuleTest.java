@@ -38,7 +38,6 @@ public class ModuleTest {
     public void testPrintStudentList() {
         System.out.println("printStudentList");
         Module instance1 = module1;
-        Module instance2 = module2;
         instance1.addStudent(student1);
         instance1.addStudent(student2);
         instance1.printStudentList();
