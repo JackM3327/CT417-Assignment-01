@@ -18,7 +18,7 @@ public class Course {
         this.endDate = endDate;
     }
 
-
+// test
     public void addModule(Module module) {
         if (!Modules.contains(module)) {
             Modules.add(module);
