@@ -7,15 +7,6 @@ branches:
   only:
     - master
     
-after_success:
-- mvn clean cobertura:cobertura
-- mvn test
-    
 build:
   on_success:
     - mvn clean test
-    
-name: CT417-Assignment-01_runCI
-type: runCI
-steps:
-  - IN: CT417-Assignment-01_ciRepo
